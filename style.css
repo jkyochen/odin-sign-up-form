@@ -13,80 +13,82 @@
 
 .container {
     display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 .left {
     background-size: cover;
     background-image: url("./static/halie-west-25xggax4bSA-unsplash.jpg");
-    height: 100vh;
-    width: 50%;
+    width: 40vw;
 }
 
 .header {
-    height: 100px;
-    background-color: hsla(120, 6%, 10%, 0.3);
-    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 20vh;
+    background-color: hsla(120, 6%, 10%, 0.3);
+    gap: 1vh;
+    padding: 15px 0;
 }
 
-.icon {
-    width: 70px;
+.logo {
+    height: 10vh;
 }
 
-.title {
+.odin {
     font-family: 'Norse Bold', monospace;
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
 }
 
 .right {
+    width: 60vw;
+    background-color: rgb(234, 234, 234);
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.right-move {
+    padding-left: 3vw;
 }
 
 .describe {
-    flex: 1;
-    background-color: rgb(234, 234, 234);
-}
-
-.describe p {
-    width: 550px;
-    margin-left: 40px;
+    width: 90%;
     font-weight: bold;
-    font-size: larger;
+    font-size: 1.2rem;
 }
 
-.describe p:first-child {
-    margin-top: 180px;
-}
-
-.describe p:nth-child(2) {
-    margin-top: 20px;
+.describe p:last-child {
+    margin: 40px 0 80px;
 }
 
 form {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
     background-color: white;
 }
 
-form legend {
+legend {
+    width: 100%;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 40px;
+    font-size: 1.2rem;
 }
 
-.input_content {
+.form {
     display: flex;
+    flex-flow: row wrap;
     gap: 20px;
-    flex-wrap: wrap;
-    flex: 1.4;
-    margin-top: 20px;
-    margin-left: 40px;
-    /* margin-right: 200px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
 }
 
 input:focus {
@@ -97,22 +99,23 @@ input:focus:invalid {
     border-color: red;
 }
 
-.submit {
-    flex: 1;
-    background-color: rgb(234, 234, 234);
-}
-
 button {
-    height: 50px;
-    width: 200px;
+    margin: 40px 0;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
     background-color: #596D48;
     color: white;
-    border-radius: 10px;
-    margin-top: 30px;
-    margin-left: 40px;
+    border-radius: 5px;
 }
 
-.submit p {
+.login {
+    display: flex;
+    gap: 5px;
     margin-top: 30px;
-    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
 }

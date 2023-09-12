@@ -13,63 +13,71 @@
     <div class="container">
         <div class="left">
             <div class="header">
-                <img class="icon" src="./static/odin-lined.png">
-                <div class="title">ODIN</div>
+                <img class="logo" src="./static/odin-lined.png" alt="logo">
+                <div class="odin">ODIN</div>
             </div>
         </div>
         <div class="right">
-            <div class="describe">
+            <div class="describe right-move">
                 <p>This is not a real online service! You Know you need something like this in your life to help you
-                    realize you realize your deepest dreams. Sign up now to get started.</p>
+                    realize you realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
                 <p>You know you want to.</p>
             </div>
             <form method="post" action="#">
-                <legend>Let's do this!</legend>
-                <div class="input_content">
-                    <label id="first_name">
-                        FIRST NAME
-                        <br />
+                <div class="form right-move">
+                    <legend>Let's do this!</legend>
+
+                    <div class="input">
+                        <label id="first_name">
+                            FIRST NAME
+                        </label>
                         <input type="text" id="first_name" name="first_name" required>
-                    </label>
+                    </div>
 
-                    <label id="last_name">
-                        LAST NAME
-                        <br />
+                    <div class="input">
+                        <label id="last_name">
+                            LAST NAME
+                        </label>
                         <input type="text" id="last_name" name="last_name" required>
-                    </label>
+                    </div>
 
-                    <label id="email">
-                        EMAIL
-                        <br />
+                    <div class="input">
+                        <label id="email">
+                            EMAIL
+                        </label>
                         <input type="email" id="email" name="email" required>
-                    </label>
+                    </div>
 
-                    <label id="phone_number">
-                        PHONE NUMBER
-                        <br />
+                    <div class="input">
+                        <label id="phone_number">
+                            PHONE NUMBER
+                        </label>
                         <input type="tel" id="phone_number" name="phone_number" required>
-                    </label>
+                    </div>
 
-                    <label id="password">
-                        PASSWORD
-                        <br />
+                    <div class="input">
+                        <label id="password">
+                            PASSWORD
+                        </label>
                         <input type="password" id="password" name="password" required>
-                    </label>
+                    </div>
 
-                    <label id="confirm_password">
-                        CONFIRM PASSWORD
-                        <br />
+                    <div class="input">
+                        <label id="confirm_password">
+                            CONFIRM PASSWORD
+                        </label>
                         <input type="password" id="confirm_password" name="confirm_password" required>
-                    </label>
+                    </div>
                 </div>
-                <div class="submit">
+                <div class="right-move">
                     <button type="submit">Create Account</button>
-                    <p>
-                        Already have an account?
-                        <a href="#">Log in</a>
-                    </p>
                 </div>
             </form>
+            <div class="login right-move">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </div>
 </body>
